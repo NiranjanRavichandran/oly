@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42DB359020C057E20013A839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB358F20C057E20013A839 /* AppDelegate.swift */; };
+		42DB359220C057E20013A839 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB359120C057E20013A839 /* ViewController.swift */; };
+		42DB359520C057E20013A839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359320C057E20013A839 /* Main.storyboard */; };
+		42DB359720C057E40013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359620C057E40013A839 /* Assets.xcassets */; };
+		42DB359A20C057E40013A839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359820C057E40013A839 /* LaunchScreen.storyboard */; };
+		42DB35A520C057E40013A839 /* olyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35A420C057E40013A839 /* olyTests.swift */; };
+		42DB35B020C057E40013A839 /* olyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35AF20C057E40013A839 /* olyUITests.swift */; };
+		42DB35C320C0592B0013A839 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB35C120C0592B0013A839 /* Interface.storyboard */; };
+		42DB35C520C0592C0013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB35C420C0592C0013A839 /* Assets.xcassets */; };
+		42DB35CC20C0592C0013A839 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42DB35CB20C0592C0013A839 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42DB35D120C0592C0013A839 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35D020C0592C0013A839 /* InterfaceController.swift */; };
+		42DB35D320C0592C0013A839 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35D220C0592C0013A839 /* ExtensionDelegate.swift */; };
+		42DB35D520C0592C0013A839 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35D420C0592C0013A839 /* NotificationController.swift */; };
+		42DB35D720C0592D0013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB35D620C0592D0013A839 /* Assets.xcassets */; };
+		42DB35DC20C0592D0013A839 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 42DB35BF20C0592B0013A839 /* watch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42DB35A120C057E40013A839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42DB358420C057E20013A839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DB358B20C057E20013A839;
+			remoteInfo = oly;
+		};
+		42DB35AC20C057E40013A839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42DB358420C057E20013A839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DB358B20C057E20013A839;
+			remoteInfo = oly;
+		};
+		42DB35CD20C0592C0013A839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42DB358420C057E20013A839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DB35CA20C0592C0013A839;
+			remoteInfo = "watch Extension";
+		};
+		42DB35DA20C0592D0013A839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42DB358420C057E20013A839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42DB35BE20C0592B0013A839;
+			remoteInfo = watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42DB35E020C0592D0013A839 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42DB35CC20C0592C0013A839 /* watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35E420C0592D0013A839 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				42DB35DC20C0592D0013A839 /* watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42DB358C20C057E20013A839 /* oly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DB358F20C057E20013A839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42DB359120C057E20013A839 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42DB359420C057E20013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42DB359620C057E40013A839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42DB359920C057E40013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42DB359B20C057E40013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DB35A020C057E40013A839 /* olyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = olyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DB35A420C057E40013A839 /* olyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = olyTests.swift; sourceTree = "<group>"; };
+		42DB35A620C057E40013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DB35AB20C057E40013A839 /* olyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = olyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DB35AF20C057E40013A839 /* olyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = olyUITests.swift; sourceTree = "<group>"; };
+		42DB35B120C057E40013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DB35BF20C0592B0013A839 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DB35C220C0592B0013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		42DB35C420C0592C0013A839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42DB35C620C0592C0013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DB35CB20C0592C0013A839 /* watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DB35D020C0592C0013A839 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		42DB35D220C0592C0013A839 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		42DB35D420C0592C0013A839 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		42DB35D620C0592D0013A839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42DB35D820C0592D0013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DB35D920C0592D0013A839 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42DB358920C057E20013A839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB359D20C057E40013A839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35A820C057E40013A839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35C820C0592C0013A839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42DB358320C057E20013A839 = {
+			isa = PBXGroup;
+			children = (
+				42DB358E20C057E20013A839 /* oly */,
+				42DB35A320C057E40013A839 /* olyTests */,
+				42DB35AE20C057E40013A839 /* olyUITests */,
+				42DB35C020C0592B0013A839 /* watch */,
+				42DB35CF20C0592C0013A839 /* watch Extension */,
+				42DB358D20C057E20013A839 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42DB358D20C057E20013A839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42DB358C20C057E20013A839 /* oly.app */,
+				42DB35A020C057E40013A839 /* olyTests.xctest */,
+				42DB35AB20C057E40013A839 /* olyUITests.xctest */,
+				42DB35BF20C0592B0013A839 /* watch.app */,
+				42DB35CB20C0592C0013A839 /* watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42DB358E20C057E20013A839 /* oly */ = {
+			isa = PBXGroup;
+			children = (
+				42DB358F20C057E20013A839 /* AppDelegate.swift */,
+				42DB359120C057E20013A839 /* ViewController.swift */,
+				42DB359320C057E20013A839 /* Main.storyboard */,
+				42DB359620C057E40013A839 /* Assets.xcassets */,
+				42DB359820C057E40013A839 /* LaunchScreen.storyboard */,
+				42DB359B20C057E40013A839 /* Info.plist */,
+			);
+			path = oly;
+			sourceTree = "<group>";
+		};
+		42DB35A320C057E40013A839 /* olyTests */ = {
+			isa = PBXGroup;
+			children = (
+				42DB35A420C057E40013A839 /* olyTests.swift */,
+				42DB35A620C057E40013A839 /* Info.plist */,
+			);
+			path = olyTests;
+			sourceTree = "<group>";
+		};
+		42DB35AE20C057E40013A839 /* olyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42DB35AF20C057E40013A839 /* olyUITests.swift */,
+				42DB35B120C057E40013A839 /* Info.plist */,
+			);
+			path = olyUITests;
+			sourceTree = "<group>";
+		};
+		42DB35C020C0592B0013A839 /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				42DB35C120C0592B0013A839 /* Interface.storyboard */,
+				42DB35C420C0592C0013A839 /* Assets.xcassets */,
+				42DB35C620C0592C0013A839 /* Info.plist */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
+		42DB35CF20C0592C0013A839 /* watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42DB35D020C0592C0013A839 /* InterfaceController.swift */,
+				42DB35D220C0592C0013A839 /* ExtensionDelegate.swift */,
+				42DB35D420C0592C0013A839 /* NotificationController.swift */,
+				42DB35D620C0592D0013A839 /* Assets.xcassets */,
+				42DB35D820C0592D0013A839 /* Info.plist */,
+				42DB35D920C0592D0013A839 /* PushNotificationPayload.apns */,
+			);
+			path = "watch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42DB358B20C057E20013A839 /* oly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DB35B420C057E40013A839 /* Build configuration list for PBXNativeTarget "oly" */;
+			buildPhases = (
+				42DB358820C057E20013A839 /* Sources */,
+				42DB358920C057E20013A839 /* Frameworks */,
+				42DB358A20C057E20013A839 /* Resources */,
+				42DB35E420C0592D0013A839 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42DB35DB20C0592D0013A839 /* PBXTargetDependency */,
+			);
+			name = oly;
+			productName = oly;
+			productReference = 42DB358C20C057E20013A839 /* oly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42DB359F20C057E40013A839 /* olyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DB35B720C057E40013A839 /* Build configuration list for PBXNativeTarget "olyTests" */;
+			buildPhases = (
+				42DB359C20C057E40013A839 /* Sources */,
+				42DB359D20C057E40013A839 /* Frameworks */,
+				42DB359E20C057E40013A839 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42DB35A220C057E40013A839 /* PBXTargetDependency */,
+			);
+			name = olyTests;
+			productName = olyTests;
+			productReference = 42DB35A020C057E40013A839 /* olyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42DB35AA20C057E40013A839 /* olyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DB35BA20C057E40013A839 /* Build configuration list for PBXNativeTarget "olyUITests" */;
+			buildPhases = (
+				42DB35A720C057E40013A839 /* Sources */,
+				42DB35A820C057E40013A839 /* Frameworks */,
+				42DB35A920C057E40013A839 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42DB35AD20C057E40013A839 /* PBXTargetDependency */,
+			);
+			name = olyUITests;
+			productName = olyUITests;
+			productReference = 42DB35AB20C057E40013A839 /* olyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		42DB35BE20C0592B0013A839 /* watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DB35E120C0592D0013A839 /* Build configuration list for PBXNativeTarget "watch" */;
+			buildPhases = (
+				42DB35BD20C0592B0013A839 /* Resources */,
+				42DB35E020C0592D0013A839 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42DB35CE20C0592C0013A839 /* PBXTargetDependency */,
+			);
+			name = watch;
+			productName = watch;
+			productReference = 42DB35BF20C0592B0013A839 /* watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		42DB35CA20C0592C0013A839 /* watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DB35DD20C0592D0013A839 /* Build configuration list for PBXNativeTarget "watch Extension" */;
+			buildPhases = (
+				42DB35C720C0592C0013A839 /* Sources */,
+				42DB35C820C0592C0013A839 /* Frameworks */,
+				42DB35C920C0592C0013A839 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watch Extension";
+			productName = "watch Extension";
+			productReference = 42DB35CB20C0592C0013A839 /* watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42DB358420C057E20013A839 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Aviato;
+				TargetAttributes = {
+					42DB358B20C057E20013A839 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					42DB359F20C057E40013A839 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 42DB358B20C057E20013A839;
+					};
+					42DB35AA20C057E40013A839 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 42DB358B20C057E20013A839;
+					};
+					42DB35BE20C0592B0013A839 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					42DB35CA20C0592C0013A839 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 42DB358720C057E20013A839 /* Build configuration list for PBXProject "oly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42DB358320C057E20013A839;
+			productRefGroup = 42DB358D20C057E20013A839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42DB358B20C057E20013A839 /* oly */,
+				42DB359F20C057E40013A839 /* olyTests */,
+				42DB35AA20C057E40013A839 /* olyUITests */,
+				42DB35BE20C0592B0013A839 /* watch */,
+				42DB35CA20C0592C0013A839 /* watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42DB358A20C057E20013A839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB359A20C057E40013A839 /* LaunchScreen.storyboard in Resources */,
+				42DB359720C057E40013A839 /* Assets.xcassets in Resources */,
+				42DB359520C057E20013A839 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB359E20C057E40013A839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35A920C057E40013A839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35BD20C0592B0013A839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB35C520C0592C0013A839 /* Assets.xcassets in Resources */,
+				42DB35C320C0592B0013A839 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35C920C0592C0013A839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB35D720C0592D0013A839 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42DB358820C057E20013A839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB359220C057E20013A839 /* ViewController.swift in Sources */,
+				42DB359020C057E20013A839 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB359C20C057E40013A839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB35A520C057E40013A839 /* olyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35A720C057E40013A839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB35B020C057E40013A839 /* olyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DB35C720C0592C0013A839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DB35D520C0592C0013A839 /* NotificationController.swift in Sources */,
+				42DB35D320C0592C0013A839 /* ExtensionDelegate.swift in Sources */,
+				42DB35D120C0592C0013A839 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42DB35A220C057E40013A839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42DB358B20C057E20013A839 /* oly */;
+			targetProxy = 42DB35A120C057E40013A839 /* PBXContainerItemProxy */;
+		};
+		42DB35AD20C057E40013A839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42DB358B20C057E20013A839 /* oly */;
+			targetProxy = 42DB35AC20C057E40013A839 /* PBXContainerItemProxy */;
+		};
+		42DB35CE20C0592C0013A839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42DB35CA20C0592C0013A839 /* watch Extension */;
+			targetProxy = 42DB35CD20C0592C0013A839 /* PBXContainerItemProxy */;
+		};
+		42DB35DB20C0592D0013A839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42DB35BE20C0592B0013A839 /* watch */;
+			targetProxy = 42DB35DA20C0592D0013A839 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42DB359320C057E20013A839 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42DB359420C057E20013A839 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42DB359820C057E40013A839 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42DB359920C057E40013A839 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		42DB35C120C0592B0013A839 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42DB35C220C0592B0013A839 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42DB35B220C057E40013A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42DB35B320C057E40013A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42DB35B520C057E40013A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = oly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.oly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42DB35B620C057E40013A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = oly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.oly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42DB35B820C057E40013A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = olyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.olyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oly.app/oly";
+			};
+			name = Debug;
+		};
+		42DB35B920C057E40013A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = olyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.olyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oly.app/oly";
+			};
+			name = Release;
+		};
+		42DB35BB20C057E40013A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = olyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.olyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = oly;
+			};
+			name = Debug;
+		};
+		42DB35BC20C057E40013A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = olyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.olyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = oly;
+			};
+			name = Release;
+		};
+		42DB35DE20C0592D0013A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.oly.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		42DB35DF20C0592D0013A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.oly.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		42DB35E220C0592D0013A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.oly.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		42DB35E320C0592D0013A839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aviato.oly.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42DB358720C057E20013A839 /* Build configuration list for PBXProject "oly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DB35B220C057E40013A839 /* Debug */,
+				42DB35B320C057E40013A839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42DB35B420C057E40013A839 /* Build configuration list for PBXNativeTarget "oly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DB35B520C057E40013A839 /* Debug */,
+				42DB35B620C057E40013A839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42DB35B720C057E40013A839 /* Build configuration list for PBXNativeTarget "olyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DB35B820C057E40013A839 /* Debug */,
+				42DB35B920C057E40013A839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42DB35BA20C057E40013A839 /* Build configuration list for PBXNativeTarget "olyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DB35BB20C057E40013A839 /* Debug */,
+				42DB35BC20C057E40013A839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42DB35DD20C0592D0013A839 /* Build configuration list for PBXNativeTarget "watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DB35DE20C0592D0013A839 /* Debug */,
+				42DB35DF20C0592D0013A839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42DB35E120C0592D0013A839 /* Build configuration list for PBXNativeTarget "watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DB35E220C0592D0013A839 /* Debug */,
+				42DB35E320C0592D0013A839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42DB358420C057E20013A839 /* Project object */;
+}

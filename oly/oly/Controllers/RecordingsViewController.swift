@@ -1,25 +1,25 @@
 //
-//  ViewController.swift
+//  RecordingsViewController.swift
 //  oly
 //
-//  Created by Niranjan Ravichandran on 5/31/18.
+//  Created by Niranjan Ravichandran on 6/1/18.
 //  Copyright © 2018 Aviato. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordingsViewController: OUITransparentViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.white
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
-

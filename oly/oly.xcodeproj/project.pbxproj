@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4217768820C1A3C500056A6D /* RecordingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217768720C1A3C500056A6D /* RecordingsViewController.swift */; };
+		4217768A20C1A43300056A6D /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217768920C1A43300056A6D /* TabViewController.swift */; };
+		4217768C20C1A47C00056A6D /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217768B20C1A47C00056A6D /* RecordViewController.swift */; };
+		4217768E20C1A48500056A6D /* TranscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217768D20C1A48500056A6D /* TranscribeViewController.swift */; };
+		4217769020C1B39300056A6D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217768F20C1B39300056A6D /* Utility.swift */; };
+		4217769720C1B41E00056A6D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217769620C1B41E00056A6D /* UIColor+Extension.swift */; };
+		421776A120C2372A00056A6D /* OUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421776A020C2372A00056A6D /* OUIViewController.swift */; };
+		421776A320C2381200056A6D /* OUITransparentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421776A220C2381200056A6D /* OUITransparentViewController.swift */; };
 		42DB359020C057E20013A839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB358F20C057E20013A839 /* AppDelegate.swift */; };
-		42DB359220C057E20013A839 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB359120C057E20013A839 /* ViewController.swift */; };
 		42DB359520C057E20013A839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359320C057E20013A839 /* Main.storyboard */; };
 		42DB359720C057E40013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359620C057E40013A839 /* Assets.xcassets */; };
 		42DB359A20C057E40013A839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359820C057E40013A839 /* LaunchScreen.storyboard */; };
@@ -81,9 +88,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4217768720C1A3C500056A6D /* RecordingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsViewController.swift; sourceTree = "<group>"; };
+		4217768920C1A43300056A6D /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		4217768B20C1A47C00056A6D /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		4217768D20C1A48500056A6D /* TranscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeViewController.swift; sourceTree = "<group>"; };
+		4217768F20C1B39300056A6D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4217769620C1B41E00056A6D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		421776A020C2372A00056A6D /* OUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUIViewController.swift; sourceTree = "<group>"; };
+		421776A220C2381200056A6D /* OUITransparentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUITransparentViewController.swift; sourceTree = "<group>"; };
 		42DB358C20C057E20013A839 /* oly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DB358F20C057E20013A839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42DB359120C057E20013A839 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42DB359420C057E20013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42DB359620C057E40013A839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DB359920C057E40013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,6 +153,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4217769120C1B3A900056A6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4217769220C1B3C200056A6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				421776A020C2372A00056A6D /* OUIViewController.swift */,
+				421776A220C2381200056A6D /* OUITransparentViewController.swift */,
+				4217768720C1A3C500056A6D /* RecordingsViewController.swift */,
+				4217768920C1A43300056A6D /* TabViewController.swift */,
+				4217768B20C1A47C00056A6D /* RecordViewController.swift */,
+				4217768D20C1A48500056A6D /* TranscribeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4217769320C1B3D700056A6D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4217768F20C1B39300056A6D /* Utility.swift */,
+				4217769620C1B41E00056A6D /* UIColor+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		42DB358320C057E20013A839 = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				42DB358F20C057E20013A839 /* AppDelegate.swift */,
-				42DB359120C057E20013A839 /* ViewController.swift */,
+				4217769220C1B3C200056A6D /* Controllers */,
+				4217769320C1B3D700056A6D /* Utility */,
+				4217769120C1B3A900056A6D /* Models */,
 				42DB359320C057E20013A839 /* Main.storyboard */,
 				42DB359620C057E40013A839 /* Assets.xcassets */,
 				42DB359820C057E40013A839 /* LaunchScreen.storyboard */,
@@ -409,8 +454,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DB359220C057E20013A839 /* ViewController.swift in Sources */,
+				421776A320C2381200056A6D /* OUITransparentViewController.swift in Sources */,
+				4217769720C1B41E00056A6D /* UIColor+Extension.swift in Sources */,
+				4217768E20C1A48500056A6D /* TranscribeViewController.swift in Sources */,
+				4217768A20C1A43300056A6D /* TabViewController.swift in Sources */,
+				4217769020C1B39300056A6D /* Utility.swift in Sources */,
+				4217768820C1A3C500056A6D /* RecordingsViewController.swift in Sources */,
 				42DB359020C057E20013A839 /* AppDelegate.swift in Sources */,
+				421776A120C2372A00056A6D /* OUIViewController.swift in Sources */,
+				4217768C20C1A47C00056A6D /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

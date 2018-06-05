@@ -44,4 +44,8 @@ extension UIColor {
         return UIColor(hexString: "#F53b50")!
     }
     
+    class var oLightGray: UIColor {
+        return UIColor(hexString: "#F7F7F7")!
+    }
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecordViewController: UITabBarController {
+class RecordViewController: OUITransparentViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,19 +22,6 @@ class RecordViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.transitionCoordinator?.animate(alongsideTransition: { (context) in
-            
-            self.navigationController?.navigationBar.shadowImage = UIImage()
-            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-            
-        }, completion: { (context) in
-            
-        })
-    }
     
 
 }

@@ -12,13 +12,22 @@ class MainViewController: OUIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
 
-        let recordingsVC = RecordingsViewController()
-        self.view.addSubview(recordingsVC.view)
-        recordingsVC.didMove(toParent: self)
+//        let recordingsVC = RecordingsViewController()
+//        self.view.addSubview(recordingsVC.view)
+//        recordingsVC.didMove(toParent: self)
         
         self.navigationItem.largeTitleDisplayMode = .always
         self.title = "Recordings"
+        
+        self.setupFloatingRecordButton()
+    }
+    
+    func setupFloatingRecordButton() {
+        let buttonSize: CGFloat = 65
+        let recordButton = RecordButton(frame: CGRect.init(x: self.view.frame.width - (buttonSize + 15), y: self.view.frame.height - self.navbarHeight - (buttonSize + 25), width: buttonSize, height: buttonSize))
+        self.view.addSubview(recordButton)
     }
 
 }

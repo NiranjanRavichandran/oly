@@ -9,6 +9,10 @@
 import UIKit
 
 class OUIViewController: UIViewController {
+    
+    lazy var navbarHeight: CGFloat = {
+        self.navigationController?.navigationBar.frame.maxY ?? 0
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

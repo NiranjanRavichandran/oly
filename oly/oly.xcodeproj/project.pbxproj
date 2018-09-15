@@ -17,8 +17,9 @@
 		42916C44214C6141004098CE /* RecordingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C43214C6141004098CE /* RecordingDetailViewController.swift */; };
 		42916C46214C6184004098CE /* RecordTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C45214C6184004098CE /* RecordTableCell.swift */; };
 		42916C49214C62EF004098CE /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C48214C62EF004098CE /* Record.swift */; };
+		42916C4B214C67C8004098CE /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C4A214C67C8004098CE /* RecordButton.swift */; };
+		42916C4D214C6D05004098CE /* UI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C4C214C6D05004098CE /* UI+Extensions.swift */; };
 		42DB359020C057E20013A839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB358F20C057E20013A839 /* AppDelegate.swift */; };
-		42DB359520C057E20013A839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359320C057E20013A839 /* Main.storyboard */; };
 		42DB359720C057E40013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359620C057E40013A839 /* Assets.xcassets */; };
 		42DB359A20C057E40013A839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DB359820C057E40013A839 /* LaunchScreen.storyboard */; };
 		42DB35A520C057E40013A839 /* olyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35A420C057E40013A839 /* olyTests.swift */; };
@@ -100,9 +101,10 @@
 		42916C43214C6141004098CE /* RecordingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailViewController.swift; sourceTree = "<group>"; };
 		42916C45214C6184004098CE /* RecordTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableCell.swift; sourceTree = "<group>"; };
 		42916C48214C62EF004098CE /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		42916C4A214C67C8004098CE /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		42916C4C214C6D05004098CE /* UI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Extensions.swift"; sourceTree = "<group>"; };
 		42DB358C20C057E20013A839 /* oly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DB358F20C057E20013A839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42DB359420C057E20013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42DB359620C057E40013A839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DB359920C057E40013A839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DB359B20C057E40013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		4217769320C1B3D700056A6D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				42916C4C214C6D05004098CE /* UI+Extensions.swift */,
 				4217768F20C1B39300056A6D /* Utility.swift */,
 				4217769620C1B41E00056A6D /* UIColor+Extension.swift */,
 			);
@@ -191,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				42916C45214C6184004098CE /* RecordTableCell.swift */,
+				42916C4A214C67C8004098CE /* RecordButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,7 +231,6 @@
 				4217769220C1B3C200056A6D /* Controllers */,
 				4217769120C1B3A900056A6D /* Models */,
 				4217769320C1B3D700056A6D /* Utility */,
-				42DB359320C057E20013A839 /* Main.storyboard */,
 				42DB359620C057E40013A839 /* Assets.xcassets */,
 				42DB359820C057E40013A839 /* LaunchScreen.storyboard */,
 				42DB359B20C057E40013A839 /* Info.plist */,
@@ -430,7 +433,6 @@
 			files = (
 				42DB359A20C057E40013A839 /* LaunchScreen.storyboard in Resources */,
 				42DB359720C057E40013A839 /* Assets.xcassets in Resources */,
-				42DB359520C057E20013A839 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +482,9 @@
 				42916C44214C6141004098CE /* RecordingDetailViewController.swift in Sources */,
 				42916C49214C62EF004098CE /* Record.swift in Sources */,
 				42DB359020C057E20013A839 /* AppDelegate.swift in Sources */,
+				42916C4B214C67C8004098CE /* RecordButton.swift in Sources */,
 				421776A120C2372A00056A6D /* OUIViewController.swift in Sources */,
+				42916C4D214C6D05004098CE /* UI+Extensions.swift in Sources */,
 				4217768C20C1A47C00056A6D /* RecordViewController.swift in Sources */,
 				42916C42214C5C1D004098CE /* MainViewController.swift in Sources */,
 			);
@@ -538,14 +542,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		42DB359320C057E20013A839 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42DB359420C057E20013A839 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		42DB359820C057E40013A839 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -36,3 +36,37 @@ class OUIBouncyControl: UIControl {
         }
     }
 }
+
+
+extension UIView {
+    
+    /* Adds view as subview and increases the height of the current view. */
+    func pushSubView(view: UIView) {
+        view.frame.origin.y = self.frame.height
+        self.frame.size.height += view.frame.height
+        self.addSubview(view)
+    }
+    
+    /**
+     Adds a shadow to the view its called from
+     
+     - parameter radius:       Radius of the shadow.
+     - parameter offsetWidth:  Width of the shadow.
+     - parameter offsetHeight: Height of the shadow.
+     - parameter color:        Color of the shadow.
+     - parameter opacity:      Opacity of shadow [0,1] range will give undefined results.
+     */
+    
+    func dropShadow(radius: CGFloat = 3, offsetWidth: CGFloat = 0, offsetHeight: CGFloat = 0, color: UIColor = UIColor.black.withAlphaComponent(0.65), opacity: Float = 0.8, path: Bool = true) {
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = CGSize(width: offsetWidth, height: offsetHeight)
+        self.layer.shadowRadius = radius
+        self.layer.shadowOpacity = opacity
+        if path {
+            self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: 6).cgPath
+        }
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
+    }
+}

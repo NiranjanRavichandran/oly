@@ -14,9 +14,9 @@ class MainViewController: OUIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
 
-//        let recordingsVC = RecordingsViewController()
-//        self.view.addSubview(recordingsVC.view)
-//        recordingsVC.didMove(toParent: self)
+        let recordingsVC = RecordingsViewController()
+        self.view.addSubview(recordingsVC.view)
+        recordingsVC.didMove(toParent: self)
         
         self.navigationItem.largeTitleDisplayMode = .always
         self.title = "Recordings"
@@ -26,8 +26,17 @@ class MainViewController: OUIViewController {
     
     func setupFloatingRecordButton() {
         let buttonSize: CGFloat = 65
-        let recordButton = RecordButton(frame: CGRect.init(x: self.view.frame.width - (buttonSize + 15), y: self.view.frame.height - self.navbarHeight - (buttonSize + 25), width: buttonSize, height: buttonSize))
+        let recordButton = RecordButton(frame: CGRect.init(x: self.view.frame.width - (buttonSize + 15), y: self.view.frame.height - self.navbarHeight - (buttonSize + 20 + self.view.safeAreaInsets.bottom), width: buttonSize, height: buttonSize))
+        recordButton.layer.zPosition = 1000
+        recordButton.dropShadow(path: false)
+        recordButton.addTarget(self, action: #selector(self.openRecordVC), for: .touchUpInside)
         self.view.addSubview(recordButton)
+    }
+    
+    //MARK: - Navigation Helpers
+    
+    @objc func openRecordVC() {
+        self.present(RecordViewController(), animated: true, completion: nil)
     }
 
 }

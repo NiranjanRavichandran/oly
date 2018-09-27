@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class RecordingsViewController: OUITransparentViewController {
     var tableView: UITableView!
@@ -21,6 +22,7 @@ class RecordingsViewController: OUITransparentViewController {
         tableView.register(RecordTableCell.self, forCellReuseIdentifier: String(describing: RecordTableCell.self))
         self.view.addSubview(tableView)
         
+        self.loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +30,23 @@ class RecordingsViewController: OUITransparentViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Recordings")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                print(data.value(forKey: "name") as! String)
+                print(data.value(forKey: "timestamp") as! Date)
+            }
+            
+        } catch {
+            
+            print(">>>>>Failed<<<<<")
+        }
+    }
 
 }
 

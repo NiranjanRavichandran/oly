@@ -32,6 +32,7 @@
 		42DB35D520C0592C0013A839 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB35D420C0592C0013A839 /* NotificationController.swift */; };
 		42DB35D720C0592D0013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB35D620C0592D0013A839 /* Assets.xcassets */; };
 		42DB35DC20C0592D0013A839 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 42DB35BF20C0592B0013A839 /* watch.app */; };
+		42FE6BD5215C128C00AB7678 /* oly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6BD3215C128C00AB7678 /* oly.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		42DB35D620C0592D0013A839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DB35D820C0592D0013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DB35D920C0592D0013A839 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		42FE6BD4215C128C00AB7678 /* oly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = oly.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				42916C47214C62C1004098CE /* Views */,
 				4217769220C1B3C200056A6D /* Controllers */,
 				4217769120C1B3A900056A6D /* Models */,
+				42FE6BD2215C107C00AB7678 /* CoreData */,
 				4217769320C1B3D700056A6D /* Utility */,
 				42DB359620C057E40013A839 /* Assets.xcassets */,
 				42DB359820C057E40013A839 /* LaunchScreen.storyboard */,
@@ -277,6 +280,14 @@
 				42DB35D920C0592D0013A839 /* PushNotificationPayload.apns */,
 			);
 			path = "watch Extension";
+			sourceTree = "<group>";
+		};
+		42FE6BD2215C107C00AB7678 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				42FE6BD3215C128C00AB7678 /* oly.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +495,7 @@
 				42DB359020C057E20013A839 /* AppDelegate.swift in Sources */,
 				42916C4B214C67C8004098CE /* RecordButton.swift in Sources */,
 				421776A120C2372A00056A6D /* OUIViewController.swift in Sources */,
+				42FE6BD5215C128C00AB7678 /* oly.xcdatamodeld in Sources */,
 				42916C4D214C6D05004098CE /* UI+Extensions.swift in Sources */,
 				4217768C20C1A47C00056A6D /* RecordViewController.swift in Sources */,
 				42916C42214C5C1D004098CE /* MainViewController.swift in Sources */,
@@ -933,6 +945,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42FE6BD3215C128C00AB7678 /* oly.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42FE6BD4215C128C00AB7678 /* oly.xcdatamodel */,
+			);
+			currentVersion = 42FE6BD4215C128C00AB7678 /* oly.xcdatamodel */;
+			path = oly.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 42DB358420C057E20013A839 /* Project object */;
 }

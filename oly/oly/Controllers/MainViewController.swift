@@ -13,12 +13,10 @@ class MainViewController: OUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        self.navigationItem.largeTitleDisplayMode = .always
 
         let recordingsVC = RecordingsViewController()
-        self.view.addSubview(recordingsVC.view)
-        recordingsVC.didMove(toParent: self)
-        
-        self.navigationItem.largeTitleDisplayMode = .always
+        self.addChildVC(viewController: recordingsVC)
         self.title = "Recordings"
         
         self.setupFloatingRecordButton()

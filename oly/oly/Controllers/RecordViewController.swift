@@ -110,7 +110,7 @@ class RecordViewController: OUITransparentViewController {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Recordings", in: context)
         let record = Record.init(name: self.currentRecordingName)
-        let managedRecordObject = record.getManagedObject(entity: entity!, context: context)
+        _ = record.getManagedObject(entity: entity!, context: context)
         do {
             try context.save()
         } catch {

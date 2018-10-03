@@ -33,6 +33,7 @@
 		42DB35D720C0592D0013A839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DB35D620C0592D0013A839 /* Assets.xcassets */; };
 		42DB35DC20C0592D0013A839 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 42DB35BF20C0592B0013A839 /* watch.app */; };
 		42FE6BD5215C128C00AB7678 /* oly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6BD3215C128C00AB7678 /* oly.xcdatamodeld */; };
+		42FE6BD7215EA82500AB7678 /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6BD6215EA82500AB7678 /* Foundation+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		42DB35D820C0592D0013A839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DB35D920C0592D0013A839 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		42FE6BD4215C128C00AB7678 /* oly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = oly.xcdatamodel; sourceTree = "<group>"; };
+		42FE6BD6215EA82500AB7678 /* Foundation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				42916C4C214C6D05004098CE /* UI+Extensions.swift */,
+				42FE6BD6215EA82500AB7678 /* Foundation+Extensions.swift */,
 				4217768F20C1B39300056A6D /* Utility.swift */,
 				4217769620C1B41E00056A6D /* UIColor+Extension.swift */,
 			);
@@ -493,6 +496,7 @@
 				42916C44214C6141004098CE /* RecordingDetailViewController.swift in Sources */,
 				42916C49214C62EF004098CE /* Record.swift in Sources */,
 				42DB359020C057E20013A839 /* AppDelegate.swift in Sources */,
+				42FE6BD7215EA82500AB7678 /* Foundation+Extensions.swift in Sources */,
 				42916C4B214C67C8004098CE /* RecordButton.swift in Sources */,
 				421776A120C2372A00056A6D /* OUIViewController.swift in Sources */,
 				42FE6BD5215C128C00AB7678 /* oly.xcdatamodeld in Sources */,

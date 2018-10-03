@@ -17,7 +17,7 @@ class OUIViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +32,7 @@ class OUIViewController: UIViewController {
         
         self.transitionCoordinator?.animate(alongsideTransition: { (context) in
             self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-            self.navigationController?.navigationBar.shadowImage = nil
+            self.navigationController?.navigationBar.shadowImage = UIImage()
         }, completion: { (context) in
             
         })
@@ -43,7 +43,7 @@ class OUIViewController: UIViewController {
         
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-        self.navigationController?.navigationBar.shadowImage = nil
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

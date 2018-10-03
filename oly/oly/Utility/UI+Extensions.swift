@@ -70,3 +70,12 @@ extension UIView {
         self.layer.rasterizationScale = UIScreen.main.scale
     }
 }
+
+extension UIViewController {
+    /* Adds the viewController passed as child VC, adds view as subview and sets parent to current VC */
+    func addChildVC(viewController: UIViewController) {
+        addChild(viewController)
+        view.addSubview(viewController.view)
+        viewController.didMove(toParent: self)
+    }
+}

@@ -40,3 +40,7 @@ class RecordingNumbers {
     }
     
 }
+
+struct GlobalConstants {
+    static let defaultAudioFormat = ".m4a"
+}

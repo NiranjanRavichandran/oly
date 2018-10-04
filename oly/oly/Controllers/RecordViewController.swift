@@ -64,7 +64,7 @@ class RecordViewController: OUITransparentViewController {
     }
     
     func startRecording() {
-        currentRecordingName = "recording\(RecordingNumbers.getNumberForRecording()).m4a"
+        currentRecordingName = "recording\(RecordingNumbers.getNumberForRecording())" + GlobalConstants.defaultAudioFormat
         let audioFilename = getDocumentsDirectory().appendingPathComponent(currentRecordingName)
         
         let settings = [
@@ -120,7 +120,7 @@ class RecordViewController: OUITransparentViewController {
     
     //MARK: - Helper functions
     func updateRecordingNumberTable(for recordName: String) {
-        let delimeter = ".m4a"
+        let delimeter = GlobalConstants.defaultAudioFormat
         if let lastChar = recordName.components(separatedBy: delimeter).first?.last {
             if let number = Int64(String(lastChar)) {
                 RecordingNumbers.addRecordingNumber(newNumber: number)

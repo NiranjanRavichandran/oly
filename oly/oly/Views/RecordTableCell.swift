@@ -54,7 +54,7 @@ struct RecordTableCellModel {
     var duration: Double = 0
     
     init(record: Record) {
-        self.name = record.name
+        self.name = record.name.replacingOccurrences(of: GlobalConstants.defaultAudioFormat, with: "")
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, yyyy"

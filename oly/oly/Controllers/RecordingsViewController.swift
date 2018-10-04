@@ -28,6 +28,7 @@ class RecordingsViewController: OUIViewController {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.searchBarStyle = .minimal
         searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Recordings"
         self.searchBar = searchController.searchBar
         tableView.tableHeaderView = searchController.searchBar
         tableView.tableHeaderView?.backgroundColor = .white

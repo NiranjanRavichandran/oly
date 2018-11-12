@@ -8,35 +8,7 @@
 
 import UIKit
 
-class OUIBouncyControl: UIControl {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        self.addTarget(self, action: #selector(self.onTouchDown(sender:)), for: .touchDown)
-        self.addTarget(self, action: #selector(self.onTouchCancel(sender:)), for: [.touchDragExit, .touchDragOutside, .touchUpInside, .touchUpOutside, .touchCancel])
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    @objc private func onTouchDown(sender: UIControl) {
-        UIView.animate(withDuration: 0.3, animations: {
-            sender.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-        }) { (_) in
-            //NADA
-        }
-        
-    }
-    
-    @objc private func onTouchCancel(sender: UIControl) {
-        UIView.animate(withDuration: 0.2) {
-            sender.transform = CGAffineTransform.identity
-        }
-    }
-}
-
+//MARK: - UIView
 
 extension UIView {
     
@@ -71,11 +43,44 @@ extension UIView {
     }
 }
 
+//MARK: - UIViewController
+
 extension UIViewController {
     /* Adds the viewController passed as child VC, adds view as subview and sets parent to current VC */
     func addChildVC(viewController: UIViewController) {
         addChild(viewController)
         view.addSubview(viewController.view)
         viewController.didMove(toParent: self)
+    }
+}
+
+
+//MARK: - UIFont
+
+extension UIFont {
+    
+    /**
+     Returns a scaled font size for the given font-name and stle
+     
+     - parameter name:       Font name in String.
+     - parameter textStyle:  UIFont.TextStyle.
+     */
+    class func scaledFont(name: String, textStyle: UIFont.TextStyle = .body) -> UIFont {
+        
+        let userFont =  UIFontDescriptor.preferredFontDescriptor(withTextStyle: textStyle)
+        let pointSize = userFont.pointSize
+        guard let customFont = UIFont(name: name, size: pointSize) else {
+            fatalError("""
+                Failed to load the "\(name)" font.
+                Make sure the font file is included in the project and the font name is spelled correctly.
+                """
+            )
+        }
+        return UIFontMetrics.default.scaledFont(for: customFont)
+    }
+    
+    /* Returns scaled font for given style with current font */
+    func getScaledFont(with style: UIFont.TextStyle = .body) -> UIFont {
+        return UIFont.scaledFont(name: self.fontName, textStyle: style)
     }
 }

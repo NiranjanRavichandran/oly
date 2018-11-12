@@ -13,6 +13,7 @@
 		4217769720C1B41E00056A6D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217769620C1B41E00056A6D /* UIColor+Extension.swift */; };
 		421776A120C2372A00056A6D /* OUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421776A020C2372A00056A6D /* OUIViewController.swift */; };
 		421776A320C2381200056A6D /* OUITransparentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421776A220C2381200056A6D /* OUITransparentViewController.swift */; };
+		428A0D222196362B008E3B69 /* UIItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A0D212196362B008E3B69 /* UIItems.swift */; };
 		42916C42214C5C1D004098CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C41214C5C1D004098CE /* MainViewController.swift */; };
 		42916C44214C6141004098CE /* RecordingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C43214C6141004098CE /* RecordingDetailViewController.swift */; };
 		42916C46214C6184004098CE /* RecordTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42916C45214C6184004098CE /* RecordTableCell.swift */; };
@@ -99,6 +100,7 @@
 		4217769620C1B41E00056A6D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		421776A020C2372A00056A6D /* OUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUIViewController.swift; sourceTree = "<group>"; };
 		421776A220C2381200056A6D /* OUITransparentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OUITransparentViewController.swift; sourceTree = "<group>"; };
+		428A0D212196362B008E3B69 /* UIItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIItems.swift; sourceTree = "<group>"; };
 		42916C41214C5C1D004098CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		42916C43214C6141004098CE /* RecordingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailViewController.swift; sourceTree = "<group>"; };
 		42916C45214C6184004098CE /* RecordTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableCell.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		428A0D2321963631008E3B69 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				428A0D212196362B008E3B69 /* UIItems.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		42916C47214C62C1004098CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				42DB358F20C057E20013A839 /* AppDelegate.swift */,
+				428A0D2321963631008E3B69 /* Controls */,
 				42916C47214C62C1004098CE /* Views */,
 				4217769220C1B3C200056A6D /* Controllers */,
 				4217769120C1B3A900056A6D /* Models */,
@@ -501,6 +512,7 @@
 				421776A120C2372A00056A6D /* OUIViewController.swift in Sources */,
 				42FE6BD5215C128C00AB7678 /* oly.xcdatamodeld in Sources */,
 				42916C4D214C6D05004098CE /* UI+Extensions.swift in Sources */,
+				428A0D222196362B008E3B69 /* UIItems.swift in Sources */,
 				4217768C20C1A47C00056A6D /* RecordViewController.swift in Sources */,
 				42916C42214C5C1D004098CE /* MainViewController.swift in Sources */,
 			);
@@ -698,6 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R8U9B2AP5;
 				INFOPLIST_FILE = oly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,6 +729,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R8U9B2AP5;
 				INFOPLIST_FILE = oly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
